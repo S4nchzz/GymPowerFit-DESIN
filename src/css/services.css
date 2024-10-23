@@ -1,0 +1,30 @@
+.cursos {
+    margin-top: 6%;
+    margin-left: 10%;
+}
+
+.titles_body {
+    font-size: 350%;
+    color: black;
+    font-weight: bold;
+}
+
+.services_title {
+    font-size: 400%;
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    top: 42%;
+    left: 43%;
+}
+
+.bt_ed {
+    border-color: black;
+    margin-left: 75%;
+    margin-bottom: 60%;
+    background-color: #fff; 
+}
+
+.txt_bt {
+  
+}
