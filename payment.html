@@ -3,43 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./src/css/Payment.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     
     <title>Payment Page</title>
 </head>
 <body>
+    
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-        <img class="logoPicture" src="./src/img/logo.png" width="100px" class="logo">
-        <div class="collapse navbar-collapse justify-content-end">
-            <ul class="navbar-nav me-4">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-link whiteText" role="button" href="#">Home</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle whiteText" role="button" href="#" data-bs-toggle="dropdown">Servicios</a>
+        <div class="container-fluid">
+            <img class="logoPicture" src="./src/img/logo.png" width="100px" class="logo">
 
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="cursos.js" role="button">Cursos</a></li>
-                        <li><a class="dropdown-item" href="maquinas.js" role="button">Maquinas</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-link whiteText" role="button" href="cuotas.js">Cuotas</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-link whiteText" role="button" href="reservas.js">Reservas</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-link whiteText" role="button" href="contacto.js">Contacto</a>
-                </li>
-            </ul>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="sidebarMenu">
+                <ul class="navbar-nav me-4">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-link whiteText" role="button" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle whiteText" role="button" href="#" data-bs-toggle="dropdown">Servicios</a>
+
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="cursos.js" role="button">Cursos</a></li>
+                            <li><a class="dropdown-item" href="maquinas.js" role="button">Maquinas</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-link whiteText" role="button" href="cuotas.js">Cuotas</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-link whiteText" role="button" href="reservas.js">Reservas</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-link whiteText" role="button" href="contacto.js">Contacto</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#"><span class="material-icons" style="color:white; font-size: 200%;">person</span></a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
-    <div>
+    <div class="image-container">
         <img src="./src/img/background.png" width="100%">
-        <h1 class="paymentTitle">CUOTAS</h1>
+        <h1 class="text-overlay">CUOTAS</h1>
     </div>
 
     <div class="container mt-5">
@@ -52,12 +66,14 @@
                         <h5>Pack basico</h5>
                         <p>Incluye</p>
 
-                        <ul>
-                            <li>Pulsera de entrada</li>
-                            <li>Acceso unicamente a sala fit</li>
-                            <li>Vestuario (sin taquilla reservada)</li>
-                            <li>1 Curso gratuito</li>
-                        </ul>
+                        <div>
+                            <ul>
+                                <li>Pulsera de entrada</li>
+                                <li>Acceso unicamente a sala fit</li>
+                                <li>Vestuario (sin taquilla reservada)</li>
+                                <li>1 Curso gratuito</li>
+                            </ul>
+                        </div>
                         
                         <h5 class="price">7,99 € / mes</h5>
                         <a href="#" class="btn btn-dark">UNIRSE</a>
