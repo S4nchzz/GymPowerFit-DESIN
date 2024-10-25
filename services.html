@@ -5,36 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./src/css/services.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
     
+    
+    
+
+    
+    
+
     <title>Página de Servicios</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-        <img src="./src/img/logo.png" width="100px" class="logo">
-        <div class="collapse navbar-collapse justify-content-end">
-            <ul class="navbar-nav me-4">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-link whiteText" role="button" href="#">Home</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle whiteText" role="button" href="#" data-bs-toggle="dropdown">Servicios</a>
+        <div class="container-fluid">
+            <img class="logoPicture" src="./src/img/logo.png" width="100px" class="logo">
 
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="cursos.js" role="button">Cursos</a></li>
-                        <li><a class="dropdown-item" href="maquinas.js" role="button">Máquinas</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-link whiteText" role="button" href="cuotas.js">Cuotas</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-link whiteText" role="button" href="reservas.js">Reservas</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-link whiteText" role="button" href="contacto.js">Contacto</a>
-                </li>
-            </ul>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="sidebarMenu">
+                <ul class="navbar-nav me-4">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-link whiteText" role="button" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle whiteText" role="button" href="#" data-bs-toggle="dropdown">Servicios</a>
+
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="cursos.js" role="button">Cursos</a></li>
+                            <li><a class="dropdown-item" href="maquinas.js" role="button">Maquinas</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-link whiteText" role="button" href="cuotas.js">Cuotas</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-link whiteText" role="button" href="reservas.js">Reservas</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-link whiteText" role="button" href="contacto.js">Contacto</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#"><span class="material-icons" style="color:white; font-size: 200%;">person</span></a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
     <div class="bckgimg">
@@ -42,11 +60,28 @@
         <h1 class="services_title">SERVICIOS</h1>
     </div>
     
-    <div class="cursos">
+    <div class="mt-5">
         <h1 class="titles_body">CURSOS</h1>
-        <button type="button" class="btn bt_ed"><span class="txt_bt">Alquiler de máquinas</span><img src="./src/img/flecha_boton.png" width="5%"></button>
+
+        <div class="container mt-5"> <!--Contenedor con los 2 ROW-->
+            <div class="row"> <!--ROW 1-->
+
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="card bg-dark rounded">
+                    <div class="card-body text-white">
+                        <h4>Pilates</h4>
+                        <button class="rounded-circle w-25 btn-light justify-content-center" data-bs-toggle="collapse" data-bs-target="#demo"><img src="./src/img/flech_abajo.png" width="100%"></button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
     </div>
     
+    
+
+    
+
     <div></div>
     <div></div>
     

@@ -1,12 +1,14 @@
-.cursos {
-    margin-top: 6%;
-    margin-left: 10%;
+.bckgimg {
+    position: relative;
+    
 }
 
 .titles_body {
-    font-size: 350%;
+    font-size: 400%;
     color: black;
     font-weight: bold;
+    margin-top: 6%;
+    margin-left: 10%;
 }
 
 .services_title {
@@ -23,8 +25,4 @@
     margin-left: 75%;
     margin-bottom: 60%;
     background-color: #fff; 
-}
-
-.txt_bt {
-  
 }
