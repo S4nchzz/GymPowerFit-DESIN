@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PowerFit</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <style>
@@ -50,6 +51,8 @@
     .img-footer {
 
         transform: rotate(180deg);
+        position:relative;
+        top: -170px;
 
     }
 
@@ -58,6 +61,35 @@
         text-align: left;
         margin-left: 70px;
 
+    }
+
+    footer {
+        color: white;
+        padding: 1%;
+    }
+
+    .footerTitle,
+    .horizontalMenuList,
+    .socialNetworks {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footerTitle {
+        font-size: 200%;
+    }
+
+    .horizontalMenuList li,
+    .socialNetworks li {
+        list-style-type: none;
+        padding-left: 1%;
+        padding-right: .5%;
+        cursor: pointer;
+    }
+
+    .horizontalMenuList li:hover {
+        transition: ease-in-out 0.5s;
+        color: rgb(209, 209, 209);
     }
 </style>
 
@@ -105,8 +137,7 @@
                 <div class="col-md-4 col-sm-6 col-xs-12" style="margin-bottom: 15px;">
                     <div class="border rounded">
                         <div class="image-container">
-                            <img src="src/assets_index/Rectangle-34-1-1024x615.jpg" class="img-fluid rounded"
-                                alt="" />
+                            <img src="src/assets_index/Rectangle-34-1-1024x615.jpg" class="img-fluid rounded" alt="" />
                             <div class="overlay-text">
                                 <h2>SESIONES EN GRUPO</h2>
                             </div>
@@ -213,11 +244,27 @@
 
         </div>
 
-    </div>
-    <div class="bg-darker-div img-footer"><img src="src/assets_index/split.svg" /></div>
-    </div>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-        <div class="bg-darker-div img-footer"><img src="src/assets_index/split.svg" /></div>
+    </div><div class="bg-darker-div"><img src="src/assets_index/split.svg" class="img-footer"/></div>
+    
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center">
+
+        <footer>
+            <h6 class="footerTitle">PowerFit</h6>
+            <ul class="horizontalMenuList">
+                <li>Home</li>
+                <li>Cursos</li>
+                <li>Maquinas</li>
+                <li>Cuotas</li>
+                <li>Reservas</li>
+                <li>Contacto</li>
+            </ul>
+            <ul class="socialNetworks">
+                <li><img src="./src/img/socialNetworks/Ptwitter.png" width="80%"></li>
+                <li><img src="./src/img/socialNetworks/Pinstagram.png" width="80%"></li>
+                <li><img src="./src/img/socialNetworks/Pfacebook.png" width="80%"></li>
+                <li><img src="./src/img/socialNetworks/Pyoutube.png" width="80%"></li>
+            </ul>
+        </footer>
     </nav>
 
 </body>
