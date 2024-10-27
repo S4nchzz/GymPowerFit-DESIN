@@ -7,14 +7,6 @@
     <link rel="stylesheet" href="./src/css/services.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-
-    
-    
-    
-
-    
-    
-
     <title>Página de Servicios</title>
 </head>
 <body>
@@ -36,7 +28,7 @@
 
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="cursos.js" role="button">Cursos</a></li>
-                            <li><a class="dropdown-item" href="maquinas.js" role="button">Maquinas</a></li>
+                            <li><a class="dropdown-item" href="maquinas.js" role="button">Máquinas</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -68,12 +60,210 @@
 
             <div class="col-6 col-md-4 col-lg-2">
                 <div class="card bg-dark rounded">
-                    <div class="card-body text-white">
-                        <h4>Pilates</h4>
-                        <button class="rounded-circle w-25 btn-light justify-content-center" data-bs-toggle="collapse" data-bs-target="#demo"><img src="./src/img/flech_abajo.png" width="100%"></button>
+                    <div class="card-body text-white d-flex flex-column align-items-center">
+                        <h4 class="titulo-card">Pilates</h4>
+                        <button class="btn btn-primary rounded-circle w-25 mb-3 custom-btn" type="button" data-bs-toggle="collapse" data-bs-target="#btn1" aria-expanded="false" aria-controls="btn1"><img src="./src/img/flech_abajo.png" width="100%"></button>
+                    </div>
+                    <div class="collapse" id="btn1">
+                        <div class="card card-body">
+                          <p>Método de ejercicio que fortalece el core, mejora la flexibilidad y la postura. Ideal para todos los niveles y enfocado en la conexión mente-cuerpo. ¡Únete a nuestras clases!</p>
+                          <p>Sala 3</p>
+                          <p>11,99€</p>
+                          <button type="button" class="btn btn-dark">Horario</button>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="card bg-dark rounded">
+                    <div class="card-body text-white d-flex flex-column align-items-center">
+                        <h4 class="titulo-card">Natación</h4>
+                        <button class="btn btn-primary rounded-circle w-25 mb-3 custom-btn" type="button" data-bs-toggle="collapse" data-bs-target="#btn2" aria-expanded="false" aria-controls="btn2"><img src="./src/img/flech_abajo.png" width="100%"></button>
+                    </div>
+                    <div class="collapse" id="btn2">
+                        <div class="card card-body">
+                            <p>Entrenamiento completo que mejora la resistencia, fortalece los músculos y reduce el estrés. Ideal para todas las edades y niveles. ¡Descubre nuestros horarios y sumérgete con nosotros!</p>
+                            <p>Piscina Gym</p>
+                            <p>16,99€</p>
+                            <button type="button" class="btn btn-dark">Horario</button>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="card bg-dark rounded">
+                    <div class="card-body text-white d-flex flex-column align-items-center">
+                        <h4 class="titulo-card">Pádel</h4>
+                        <button class="btn btn-primary rounded-circle w-25 mb-3 custom-btn" type="button" data-bs-toggle="collapse" data-bs-target="#btn3" aria-expanded="false" aria-controls="btn3"><img src="./src/img/flech_abajo.png" width="100%"></button>
+                    </div>
+                    <div class="collapse" id="btn3">
+                        <div class="card card-body">
+                            <p>Deporte dinámico y social que mejora la coordinación, agilidad y resistencia. Perfecto para todos los niveles. ¡Reserva tu cancha y juega con nosotros!</p>
+                            <p>Canchas de Pádel</p>
+                            <p>19,99€</p>
+                            <button type="button" class="btn btn-dark">Horario</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="card bg-dark rounded">
+                    <div class="card-body text-white d-flex flex-column align-items-center">
+                        <h4 class="titulo-card">Tenis</h4>
+                        <button class="btn btn-primary rounded-circle w-25 mb-3 custom-btn" type="button" data-bs-toggle="collapse" data-bs-target="#btn4" aria-expanded="false" aria-controls="btn4"><img src="./src/img/flech_abajo.png" width="100%"></button>
+                    </div>
+                    <div class="collapse" id="btn4">
+                        <div class="card card-body">
+                            <p>Deporte intenso que potencia la fuerza, velocidad y concentración. Ideal para todas las edades y niveles. ¡Únete y mejora tu juego en nuestras canchas!</p>
+                            <p>Canchas de Tenis</p>
+                            <p>17,99€</p>
+                            <button type="button" class="btn btn-dark">Horario</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="card bg-dark rounded">
+                    <div class="card-body text-white d-flex flex-column align-items-center">
+                        <h4 class="titulo-card">Boxeo</h4>
+                        <button class="btn btn-primary rounded-circle w-25 mb-3 custom-btn" type="button" data-bs-toggle="collapse" data-bs-target="#btn5" aria-expanded="false" aria-controls="btn5"><img src="./src/img/flech_abajo.png" width="100%"></button>
+                    </div>
+                    <div class="collapse" id="btn5">
+                        <div class="card card-body">
+                            <p>Entrenamiento completo que mejora fuerza, resistencia y enfoque mental. Ideal para liberar estrés y fortalecer el cuerpo. ¡Únete a nuestras clases y desafíate!</p>
+                            <p>Sala 4</p>
+                            <p>21,99€</p>
+                            <button type="button" class="btn btn-dark">Horario</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="card bg-dark rounded">
+                    <div class="card-body text-white d-flex flex-column align-items-center">
+                        <h4 class="titulo-card">Zumba</h4>
+                        <button class="btn btn-primary rounded-circle w-25 mb-3 custom-btn" type="button" data-bs-toggle="collapse" data-bs-target="#btn6" aria-expanded="false" aria-controls="btn6"><img src="./src/img/flech_abajo.png" width="100%"></button>
+                    </div>
+                    <div class="collapse" id="btn6">
+                        <div class="card card-body">
+                            <p>Clase de baile y fitness llena de energía que combina ritmos latinos y movimientos divertidos. Ideal para todos los niveles. ¡Baila, quema calorías y diviértete con nosotros!</p>
+                            <p>Sala 1</p>
+                            <p>9,99€</p>
+                            <button type="button" class="btn btn-dark">Horario</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="row">
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card bg-dark rounded">
+                        <div class="card-body text-white d-flex flex-column align-items-center">
+                            <h4 class="titulo-card">Hatha</h4>
+                            <button class="btn btn-primary rounded-circle w-25 mb-3 custom-btn" type="button" data-bs-toggle="collapse" data-bs-target="#btn7" aria-expanded="false" aria-controls="btn7"><img src="./src/img/flech_abajo.png" width="100%"></button>
+                        </div>
+                        <div class="collapse" id="btn7">
+                            <div class="card card-body">
+                                <p>Práctica equilibrada que combina posturas, respiración y meditación. Ideal para mejorar la flexibilidad, la fuerza y la paz mental. ¡Únete a nuestras clases y encuentra tu centro!</p>
+                                <p>Sala 1</p>
+                                <p>9,99€</p>
+                                <button type="button" class="btn btn-dark">Horario</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card bg-dark rounded">
+                        <div class="card-body text-white d-flex flex-column align-items-center">
+                            <h4 class="titulo-card">Spinning</h4>
+                            <button class="btn btn-primary rounded-circle w-25 mb-3 custom-btn" type="button" data-bs-toggle="collapse" data-bs-target="#btn8" aria-expanded="false" aria-controls="btn8"><img src="./src/img/flech_abajo.png" width="100%"></button>
+                        </div>
+                        <div class="collapse" id="btn8">
+                            <div class="card card-body">
+                                <p>Clase de ciclismo indoor intensa que mejora la resistencia cardiovascular y quema calorías. Perfecto para todos los niveles. ¡Sube a la bicicleta y pedalea con energía!</p>
+                                <p>Sala 1</p>
+                                <p>9,99€</p>
+                                <button type="button" class="btn btn-dark">Horario</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card bg-dark rounded">
+                        <div class="card-body text-white d-flex flex-column align-items-center">
+                            <h4 class="titulo-card">Yoga</h4>
+                            <button class="btn btn-primary rounded-circle w-25 mb-3 custom-btn" type="button" data-bs-toggle="collapse" data-bs-target="#btn9" aria-expanded="false" aria-controls="btn9"><img src="./src/img/flech_abajo.png" width="100%"></button>
+                        </div>
+                        <div class="collapse" id="btn9">
+                            <div class="card card-body">
+                                <p>Práctica que combina posturas, respiración y meditación para mejorar la flexibilidad, reducir el estrés y promover el bienestar integral. ¡Descubre la paz interior en nuestras clases!</p>
+                                <p>Sala 1</p>
+                                <p>9,99€</p>
+                                <button type="button" class="btn btn-dark">Horario</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card bg-dark rounded">
+                        <div class="card-body text-white d-flex flex-column align-items-center">
+                            <h4 class="titulo-card">Crossfit</h4>
+                            <button class="btn btn-primary rounded-circle w-25 mb-3 custom-btn" type="button" data-bs-toggle="collapse" data-bs-target="#btn10" aria-expanded="false" aria-controls="btn10"><img src="./src/img/flech_abajo.png" width="100%"></button>
+                        </div>
+                        <div class="collapse" id="btn10">
+                            <div class="card card-body">
+                                <p>Entrenamiento funcional intenso que combina levantamiento de pesas, cardio y ejercicios de alta intensidad. Ideal para todos los niveles. ¡Desafía tus límites y alcanza tus metas!</p>
+                                <p>Sala 1</p>
+                                <p>9,99€</p>
+                                <button type="button" class="btn btn-dark">Horario</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card bg-dark rounded">
+                        <div class="card-body text-white d-flex flex-column align-items-center">
+                            <h4 class="titulo-card">Step</h4>
+                            <button class="btn btn-primary rounded-circle w-25 mb-3 custom-btn" type="button" data-bs-toggle="collapse" data-bs-target="#btn11" aria-expanded="false" aria-controls="btn11"><img src="./src/img/flech_abajo.png" width="100%"></button>
+                        </div>
+                        <div class="collapse" id="btn11">
+                            <div class="card card-body">
+                                <p>Clase de aeróbicos que utiliza una plataforma para tonificar y mejorar la resistencia cardiovascular. Divertido y dinámico, apto para todos los niveles. ¡Únete y eleva tu energía!</p>
+                                <p>Sala 1</p>
+                                <p>9,99€</p>
+                                <button type="button" class="btn btn-dark">Horario</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card bg-dark rounded">
+                        <div class="card-body text-white d-flex flex-column align-items-center">
+                            <h4 class="titulo-card">Ciclo</h4>
+                            <button class="btn btn-primary rounded-circle w-25 mb-3 custom-btn" type="button" data-bs-toggle="collapse" data-bs-target="#btn12" aria-expanded="false" aria-controls="btn12"><img src="./src/img/flech_abajo.png" width="100%"></button>
+                        </div>
+                        <div class="collapse" id="btn12">
+                            <div class="card card-body">
+                                <p>Entrenamiento de ciclismo indoor que combina música y motivación para mejorar la resistencia y quema de calorías. Ideal para todos los niveles. ¡Pedalea hacia tus objetivos!</p>
+                                <p>Sala 1</p>
+                                <p>9,99€</p>
+                                <button type="button" class="btn btn-dark">Horario</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>

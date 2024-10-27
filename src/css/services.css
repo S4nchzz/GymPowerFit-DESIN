@@ -1,6 +1,5 @@
 .bckgimg {
     position: relative;
-    
 }
 
 .titles_body {
@@ -20,9 +19,39 @@
     left: 43%;
 }
 
-.bt_ed {
-    border-color: black;
-    margin-left: 75%;
-    margin-bottom: 60%;
-    background-color: #fff; 
+.custom-btn {
+    background-color: #e3e1e1;
+    --bs-btn-hover-bg: #e3e1e1;
+    --bs-btn-active-bg: #e3e1e1;
+    border: none;
+    position: absolute;
+    margin-top: 32%;
+    z-index: 1;
+    width: 50px;         /* Ajusta el ancho según tu diseño */
+    height: 50px;        /* Ajusta la altura según tu diseño */
+    display: flex;       /* Para centrar el contenido */
+    justify-content: center;  /* Centra horizontalmente el contenido */
+    align-items: center;     /* Centra verticalmente el contenido */
+    border-radius: 50%;
+}
+
+.card {
+    width: 100%; /* Se ajusta al 100% del contenedor */
+    max-width: 350px; /* Ancho máximo para mantener el diseño */
+    
+}
+
+.card-body {
+    padding: 20px; /* Espacio interno más cómodo */
+    
+}
+
+.titulo-card {
+    font-size: 2rem; /* Aumentar el tamaño del texto del título */
+    margin-bottom: 15px; /* Espaciado inferior */
+    padding-bottom: 10%;
+}
+
+.col-6, .col-md-4, .col-lg-2 {
+    margin-bottom: 7%;
 }
