@@ -1,3 +1,5 @@
+/*Body*/
+
 .bckgimg {
     position: relative;
 }
@@ -27,31 +29,124 @@
     position: absolute;
     margin-top: 32%;
     z-index: 1;
-    width: 50px;         /* Ajusta el ancho según tu diseño */
-    height: 50px;        /* Ajusta la altura según tu diseño */
-    display: flex;       /* Para centrar el contenido */
-    justify-content: center;  /* Centra horizontalmente el contenido */
-    align-items: center;     /* Centra verticalmente el contenido */
-    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+
+
 }
 
 .card {
-    width: 100%; /* Se ajusta al 100% del contenedor */
-    max-width: 350px; /* Ancho máximo para mantener el diseño */
+    width: 100%;
+    max-width: 350px;
     
 }
 
 .card-body {
-    padding: 20px; /* Espacio interno más cómodo */
-    
+    padding: 20px;
 }
 
 .titulo-card {
-    font-size: 2rem; /* Aumentar el tamaño del texto del título */
-    margin-bottom: 15px; /* Espaciado inferior */
+    font-size: 2rem;
+    margin-bottom: 15px;
     padding-bottom: 10%;
 }
 
 .col-6, .col-md-4, .col-lg-2 {
     margin-bottom: 7%;
+}
+
+.card-img-maq {
+    padding: 9%;
+}
+
+.maq-txt {
+    font-weight: bold;
+}
+
+/*Footer*/
+
+footer {
+    background-color: #141212;
+    color: white;
+    padding: 1%;
+}
+
+.footerTitle, .horizontalMenuList, .socialNetworks {
+    display: flex;
+    justify-content: center;
+}
+
+.footerTitle {
+    font-size: 200%;
+}
+
+.horizontalMenuList li, .socialNetworks li {
+    list-style-type: none;
+    padding-left: 1%;
+    padding-right: .5%;
+    cursor: pointer;
+}
+
+.horizontalMenuList li:hover {
+    transition: ease-in-out 0.5s;
+    color: rgb(209, 209, 209);
+}
+
+.image-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.text-overlay {
+    position: absolute;
+    color: white;
+    font-size: 400%;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+/*Modal*/
+.modal-body {
+    display: flex;
+    align-items: center;
+}
+
+.loginDiv {
+    text-align: center;
+    margin-left: 10%;
+}
+
+.manBackground {
+    flex: 1;
+    display: flex;
+    justify-content: right;
+}
+
+.loginTextFields {
+    display: block;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    color: white;
+}
+
+.manPosingPicture {
+    mask-image: linear-gradient(
+        to left,
+        black 10%,
+        transparent
+    );
+
+    opacity: 70%;
+    margin-bottom: -3%;
+    background-size: cover;
+}
+
+.buttonsPopup {
+    display: flex;
+    justify-content: space-between;
 }

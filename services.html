@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="./src/css/services.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    
     <title>Página de Servicios</title>
+    
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target=".navbar">
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <div class="container-fluid">
             <img class="logoPicture" src="./src/img/logo.png" width="100px" class="logo">
@@ -49,14 +51,16 @@
     </nav>
     <div class="bckgimg">
         <img src="./src/img/background.png" width="100%" class="bckg_img">
-        <h1 class="services_title">SERVICIOS</h1>
+        <h1 class="services_title" id="crs">SERVICIOS</h1>
     </div>
     
+    <button type="button" class="btn btn-dark" style="margin-top: 2%; margin-left: 89%;"><a class="nav-link maq-txt" href="#mqnrs">MAQUINARIA</a></button>
+
     <div class="mt-5">
         <h1 class="titles_body">CURSOS</h1>
 
-        <div class="container mt-5"> <!--Contenedor con los 2 ROW-->
-            <div class="row"> <!--ROW 1-->
+        <div class="container mt-5"> <!--Contenedor con los 2 ROW de CURSOS-->
+            <div class="row"> <!--ROW primera fila CURSOS-->
 
             <div class="col-6 col-md-4 col-lg-2">
                 <div class="card bg-dark rounded">
@@ -69,7 +73,7 @@
                           <p>Método de ejercicio que fortalece el core, mejora la flexibilidad y la postura. Ideal para todos los niveles y enfocado en la conexión mente-cuerpo. ¡Únete a nuestras clases!</p>
                           <p>Sala 3</p>
                           <p>11,99€</p>
-                          <button type="button" class="btn btn-dark">Horario</button>
+                          <button class="btn btn-dark"><a class="nav-link" href="#hrr">Horario</a></button>
                         </div>
                       </div>
                 </div>
@@ -86,7 +90,7 @@
                             <p>Entrenamiento completo que mejora la resistencia, fortalece los músculos y reduce el estrés. Ideal para todas las edades y niveles. ¡Descubre nuestros horarios y sumérgete con nosotros!</p>
                             <p>Piscina Gym</p>
                             <p>16,99€</p>
-                            <button type="button" class="btn btn-dark">Horario</button>
+                            <button class="btn btn-dark"><a class="nav-link" href="#hrr">Horario</a></button>
                         </div>
                     </div>
                 </div>
@@ -102,8 +106,8 @@
                         <div class="card card-body">
                             <p>Deporte dinámico y social que mejora la coordinación, agilidad y resistencia. Perfecto para todos los niveles. ¡Reserva tu cancha y juega con nosotros!</p>
                             <p>Canchas de Pádel</p>
-                            <p>19,99€</p>
-                            <button type="button" class="btn btn-dark">Horario</button>
+                            <p>18,00€</p>
+                            <button class="btn btn-dark"><a class="nav-link" href="#hrr">Horario</a></button>
                         </div>
                     </div>
                 </div>
@@ -120,7 +124,7 @@
                             <p>Deporte intenso que potencia la fuerza, velocidad y concentración. Ideal para todas las edades y niveles. ¡Únete y mejora tu juego en nuestras canchas!</p>
                             <p>Canchas de Tenis</p>
                             <p>17,99€</p>
-                            <button type="button" class="btn btn-dark">Horario</button>
+                            <button class="btn btn-dark"><a class="nav-link" href="#hrr">Horario</a></button>
                         </div>
                     </div>
                 </div>
@@ -136,8 +140,8 @@
                         <div class="card card-body">
                             <p>Entrenamiento completo que mejora fuerza, resistencia y enfoque mental. Ideal para liberar estrés y fortalecer el cuerpo. ¡Únete a nuestras clases y desafíate!</p>
                             <p>Sala 4</p>
-                            <p>21,99€</p>
-                            <button type="button" class="btn btn-dark">Horario</button>
+                            <p>15,00€</p>
+                            <button class="btn btn-dark"><a class="nav-link" href="#hrr">Horario</a></button>
                         </div>
                     </div>
                 </div>
@@ -152,15 +156,16 @@
                     <div class="collapse" id="btn6">
                         <div class="card card-body">
                             <p>Clase de baile y fitness llena de energía que combina ritmos latinos y movimientos divertidos. Ideal para todos los niveles. ¡Baila, quema calorías y diviértete con nosotros!</p>
-                            <p>Sala 1</p>
-                            <p>9,99€</p>
-                            <button type="button" class="btn btn-dark">Horario</button>
+                            <p>Sala 6</p>
+                            <p>8,99€</p>
+                            <button class="btn btn-dark"><a class="nav-link" href="#hrr">Horario</a></button>
                         </div>
                     </div>
                 </div>
             </div>
             </div>
-            <div class="row">
+
+            <div class="row"> <!--ROW segunda fila CURSOS-->
 
                 <div class="col-6 col-md-4 col-lg-2">
                     <div class="card bg-dark rounded">
@@ -171,9 +176,9 @@
                         <div class="collapse" id="btn7">
                             <div class="card card-body">
                                 <p>Práctica equilibrada que combina posturas, respiración y meditación. Ideal para mejorar la flexibilidad, la fuerza y la paz mental. ¡Únete a nuestras clases y encuentra tu centro!</p>
-                                <p>Sala 1</p>
-                                <p>9,99€</p>
-                                <button type="button" class="btn btn-dark">Horario</button>
+                                <p>Sala 9</p>
+                                <p>10,00€</p>
+                                <button class="btn btn-dark"><a class="nav-link" href="#hrr">Horario</a></button>
                             </div>
                         </div>
                     </div>
@@ -188,9 +193,9 @@
                         <div class="collapse" id="btn8">
                             <div class="card card-body">
                                 <p>Clase de ciclismo indoor intensa que mejora la resistencia cardiovascular y quema calorías. Perfecto para todos los niveles. ¡Sube a la bicicleta y pedalea con energía!</p>
-                                <p>Sala 1</p>
-                                <p>9,99€</p>
-                                <button type="button" class="btn btn-dark">Horario</button>
+                                <p>Sala 2</p>
+                                <p>14,99€</p>
+                                <button class="btn btn-dark"><a class="nav-link" href="#hrr">Horario</a></button>
                             </div>
                         </div>
                     </div>
@@ -205,9 +210,9 @@
                         <div class="collapse" id="btn9">
                             <div class="card card-body">
                                 <p>Práctica que combina posturas, respiración y meditación para mejorar la flexibilidad, reducir el estrés y promover el bienestar integral. ¡Descubre la paz interior en nuestras clases!</p>
-                                <p>Sala 1</p>
-                                <p>9,99€</p>
-                                <button type="button" class="btn btn-dark">Horario</button>
+                                <p>Sala 4</p>
+                                <p>7,00€</p>
+                                <button class="btn btn-dark"><a class="nav-link" href="#hrr">Horario</a></button>
                             </div>
                         </div>
                     </div>
@@ -222,9 +227,9 @@
                         <div class="collapse" id="btn10">
                             <div class="card card-body">
                                 <p>Entrenamiento funcional intenso que combina levantamiento de pesas, cardio y ejercicios de alta intensidad. Ideal para todos los niveles. ¡Desafía tus límites y alcanza tus metas!</p>
-                                <p>Sala 1</p>
-                                <p>9,99€</p>
-                                <button type="button" class="btn btn-dark">Horario</button>
+                                <p>Sala 3</p>
+                                <p>8,00€</p>
+                                <button class="btn btn-dark"><a class="nav-link" href="#hrr">Horario</a></button>
                             </div>
                         </div>
                     </div>
@@ -239,9 +244,9 @@
                         <div class="collapse" id="btn11">
                             <div class="card card-body">
                                 <p>Clase de aeróbicos que utiliza una plataforma para tonificar y mejorar la resistencia cardiovascular. Divertido y dinámico, apto para todos los niveles. ¡Únete y eleva tu energía!</p>
-                                <p>Sala 1</p>
-                                <p>9,99€</p>
-                                <button type="button" class="btn btn-dark">Horario</button>
+                                <p>Sala 5</p>
+                                <p>4,99€</p>
+                                <button class="btn btn-dark"><a class="nav-link" href="#hrr">Horario</a></button>
                             </div>
                         </div>
                     </div>
@@ -256,9 +261,9 @@
                         <div class="collapse" id="btn12">
                             <div class="card card-body">
                                 <p>Entrenamiento de ciclismo indoor que combina música y motivación para mejorar la resistencia y quema de calorías. Ideal para todos los niveles. ¡Pedalea hacia tus objetivos!</p>
-                                <p>Sala 1</p>
-                                <p>9,99€</p>
-                                <button type="button" class="btn btn-dark">Horario</button>
+                                <p>Sala 8</p>
+                                <p>12,00€</p>
+                                <button class="btn btn-dark"><a class="nav-link" href="#hrr">Horario</a></button>
                             </div>
                         </div>
                     </div>
@@ -268,13 +273,190 @@
         </div>
     </div>
     
-    
+    <div id="hrr">
+        <h1 class="titles_body">HORARIO</h1>
+        <div style="display: flex; justify-content: center;">
+            <img src="./src/img/Horario.png">
+        </div>
+    </div>
 
-    
+    <div class="mt-2">
+        <h1 class="titles_body" id="mqnrs">MAQUINARIA</h1>
 
-    <div></div>
-    <div></div>
-    
+        <div class="container mt-5"> <!--Contenedor con los 2 ROW de MAQUINARIA-->
+            <div class="row"> <!--ROW primera fila MAQUINARIA-->
+                
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card">
+                        <img class="card-img-maq" src="./src/img/maquinaria/maq1.png" style="width: 150px; margin-left: 12%;">
+                        <div class="card-body">
+                          <p class="maq-txt">Prensa Horizontal</p>
+                          <p>BH Fitness 45</p>
+                          <p>3,99 € / semana</p>
+                          <button type="button" class="btn btn-dark">Alquilar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card">
+                        <img class="card-img-maq" src="./src/img/maquinaria/maq2.png" style="width: 150px; margin-left: 12%;">
+                        <div class="card-body">
+                          <p class="maq-txt">Press de Pecho</p>
+                          <p>BH Fitness 46</p>
+                          <p>3,99 € / semana</p>
+                          <button type="button" class="btn btn-dark">Alquilar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card">
+                        <img class="card-img-maq" src="./src/img/maquinaria/maq3.png" style="width: 150px; margin-left: 12%;">
+                        <div class="card-body">
+                          <p class="maq-txt">Multifunción</p>
+                          <p>BH Fitness 47</p>
+                          <p>3,99 € / semana</p>
+                          <button type="button" class="btn btn-dark">Alquilar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card">
+                        <img class="card-img-maq" src="./src/img/maquinaria/maq4.png" style="width: 150px; margin-left: 12%;">
+                        <div class="card-body">
+                          <p class="maq-txt">Calf Press</p>
+                          <p>BH Fitness 48</p>
+                          <p>3,99 € / semana</p>
+                          <button type="button" class="btn btn-dark">Alquilar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card">
+                        <img class="card-img-maq" src="./src/img/maquinaria/maq5.png" style="width: 150px; margin-left: 12%;">
+                        <div class="card-body">
+                          <p class="maq-txt">Seated Row</p>
+                          <p>BH Fitness 49</p>
+                          <p>3,99 € / semana</p>
+                          <button type="button" class="btn btn-dark">Alquilar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card">
+                        <img class="card-img-maq" src="./src/img/maquinaria/maq6.png" style="width: 150px; margin-left: 12%;">
+                        <div class="card-body">
+                          <p class="maq-txt">Aductores</p>
+                          <p>BH Fitness 50</p>
+                          <p>3,99 € / semana</p>
+                          <button type="button" class="btn btn-dark">Alquilar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row"> <!--ROW primera fila MAQUINARIA-->
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card">
+                        <img class="card-img-maq" src="./src/img/maquinaria/maq7.png" style="width: 150px; margin-left: 12%;">
+                        <div class="card-body">
+                          <p class="maq-txt">Multipower</p>
+                          <p>BH Fitness 51</p>
+                          <p>3,99 € / semana</p>
+                          <button type="button" class="btn btn-dark">Alquilar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card">
+                        <img class="card-img-maq" src="./src/img/maquinaria/maq8.png" style="width: 150px; margin-left: 12%;">
+                        <div class="card-body">
+                          <p class="maq-txt">Remo</p>
+                          <p>BH Fitness 52</p>
+                          <p>3,99 € / semana</p>
+                          <button type="button" class="btn btn-dark">Alquilar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card">
+                        <img class="card-img-maq" src="./src/img/maquinaria/maq9.png" style="width: 150px; margin-left: 12%;">
+                        <div class="card-body">
+                          <p class="maq-txt">Escaleras</p>
+                          <p>BH Fitness 53</p>
+                          <p>3,99 € / semana</p>
+                          <button type="button" class="btn btn-dark">Alquilar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card">
+                        <img class="card-img-maq" src="./src/img/maquinaria/maq10.png" style="width: 150px; margin-left: 12%;">
+                        <div class="card-body">
+                          <p class="maq-txt">Bicicleta</p>
+                          <p>BH Fitness 54</p>
+                          <p>3,99 € / semana</p>
+                          <button type="button" class="btn btn-dark">Alquilar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card">
+                        <img class="card-img-maq" src="./src/img/maquinaria/maq11.png" style="width: 150px; margin-left: 12%;">
+                        <div class="card-body">
+                          <p class="maq-txt">Cinta de correr</p>
+                          <p>BH Fitness 55</p>
+                          <p>3,99 € / semana</p>
+                          <button type="button" class="btn btn-dark">Alquilar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card">
+                        <img class="card-img-maq" src="./src/img/maquinaria/maq12.png" style="width: 150px; margin-left: 12%;">
+                        <div class="card-body">
+                          <p class="maq-txt">Curl de biceps</p>
+                          <p>BH Fitness 56</p>
+                          <p>3,99 € / semana</p>
+                          <button type="button" class="btn btn-dark">Alquilar</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <button type="button" class="btn btn-dark" style="margin-bottom: 5%; margin-left: 5%;"><a class="nav-link maq-txt" href="#crs">CURSOS</a></button>
     
 </body>
+<footer>
+    <h6 class="footerTitle">PowerFit</h6>
+    <ul class="horizontalMenuList">
+        <li>Home</li>
+        <li>Cursos</li>
+        <li>Maquinas</li>
+        <li>Cuotas</li>
+        <li>Reservas</li>
+        <li>Contacto</li>
+    </ul>
+    <ul class="socialNetworks">
+        <li><img src="./src/img/socialNetworks/Ptwitter.png" width="80%"></li>
+        <li><img src="./src/img/socialNetworks/Pinstagram.png" width="80%"></li>
+        <li><img src="./src/img/socialNetworks/Pfacebook.png" width="80%"></li>
+        <li><img src="./src/img/socialNetworks/Pyoutube.png" width="80%"></li>
+    </ul>
+</footer>
 </html>
