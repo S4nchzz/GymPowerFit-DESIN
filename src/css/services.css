@@ -150,3 +150,35 @@ footer {
     display: flex;
     justify-content: space-between;
 }
+
+/*POP-UP MACHINARY*/
+.modal-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.infoAndFields {
+    margin-left: 8%;
+}
+
+.reserveContent {
+    text-align: center;
+}
+
+.sendDataField {
+    display: block;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    margin-bottom: 4%;
+    font-size: 1.15rem;
+    width: 60%;
+}
+
+.reserveBtn {
+    float: right;
+    margin-right: 10%;
+    font-size: 1.25rem;
+    font-weight: bold;
+    width: 25%;
+}

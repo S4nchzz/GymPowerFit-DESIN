@@ -283,6 +283,35 @@
     <div class="mt-2">
         <h1 class="titles_body" id="mqnrs">MAQUINARIA</h1>
 
+        <div class="modal fade" id="machinaryPopup" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content bg-dark">
+                    <div class="modal-body">
+                        <div class="reserveContent">
+                            <h1 class="text-white" style="text-align: center;">RESERVAR</h1>
+                            <img src="./src/img/maquinaria/maq1.png" alt="Maquina" width="70%">
+                        </div>
+                    </div>
+
+                    <div class="infoAndFields">
+                        <div class="machineInfo">
+                            <h5 style="color: #AFAFAF;">Maquinas Multifuncion</h5>
+                            <h5 class="text-white">BH Fitnes</h5>
+                            
+                            <img src="./src/img/estrellinas.png" alt="Star rating" width="25%">
+
+                            <h5 class="text-white mt-2">3,99€ / mes</h5>    
+                        </div>
+                        <div class="userInfo mt-3">
+                            <input type="text" id="name" class="sendDataField" placeholder="Nombre"/>
+                            <input type="text" id="braceletId" class="sendDataField" placeholder="Nº de Pulsera"/>
+                        </div>
+
+                        <button class="btn btn-light rounded-pill mb-4 mt-2 reserveBtn">Reservar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="container mt-5"> <!--Contenedor con los 2 ROW de MAQUINARIA-->
             <div class="row"> <!--ROW primera fila MAQUINARIA-->
                 
@@ -293,7 +322,7 @@
                           <p class="maq-txt">Prensa Horizontal</p>
                           <p>BH Fitness 45</p>
                           <p>3,99 € / semana</p>
-                          <button type="button" class="btn btn-dark">Alquilar</button>
+                          <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#machinaryPopup">Alquilar</button>
                         </div>
                     </div>
                 </div>
@@ -305,7 +334,7 @@
                           <p class="maq-txt">Press de Pecho</p>
                           <p>BH Fitness 46</p>
                           <p>3,99 € / semana</p>
-                          <button type="button" class="btn btn-dark">Alquilar</button>
+                          <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#machinaryPopup">Alquilar</button>
                         </div>
                     </div>
                 </div>
@@ -317,7 +346,7 @@
                           <p class="maq-txt">Multifunción</p>
                           <p>BH Fitness 47</p>
                           <p>3,99 € / semana</p>
-                          <button type="button" class="btn btn-dark">Alquilar</button>
+                          <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#machinaryPopup">Alquilar</button>
                         </div>
                     </div>
                 </div>
@@ -329,7 +358,7 @@
                           <p class="maq-txt">Calf Press</p>
                           <p>BH Fitness 48</p>
                           <p>3,99 € / semana</p>
-                          <button type="button" class="btn btn-dark">Alquilar</button>
+                          <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#machinaryPopup">Alquilar</button>
                         </div>
                     </div>
                 </div>
@@ -341,7 +370,7 @@
                           <p class="maq-txt">Seated Row</p>
                           <p>BH Fitness 49</p>
                           <p>3,99 € / semana</p>
-                          <button type="button" class="btn btn-dark">Alquilar</button>
+                          <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#machinaryPopup">Alquilar</button>
                         </div>
                     </div>
                 </div>
@@ -353,7 +382,7 @@
                           <p class="maq-txt">Aductores</p>
                           <p>BH Fitness 50</p>
                           <p>3,99 € / semana</p>
-                          <button type="button" class="btn btn-dark">Alquilar</button>
+                          <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#machinaryPopup">Alquilar</button>
                         </div>
                     </div>
                 </div>
@@ -368,7 +397,7 @@
                           <p class="maq-txt">Multipower</p>
                           <p>BH Fitness 51</p>
                           <p>3,99 € / semana</p>
-                          <button type="button" class="btn btn-dark">Alquilar</button>
+                          <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#machinaryPopup">Alquilar</button>
                         </div>
                     </div>
                 </div>
@@ -380,7 +409,7 @@
                           <p class="maq-txt">Remo</p>
                           <p>BH Fitness 52</p>
                           <p>3,99 € / semana</p>
-                          <button type="button" class="btn btn-dark">Alquilar</button>
+                          <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#machinaryPopup">Alquilar</button>
                         </div>
                     </div>
                 </div>
@@ -392,7 +421,7 @@
                           <p class="maq-txt">Escaleras</p>
                           <p>BH Fitness 53</p>
                           <p>3,99 € / semana</p>
-                          <button type="button" class="btn btn-dark">Alquilar</button>
+                          <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#machinaryPopup">Alquilar</button>
                         </div>
                     </div>
                 </div>
@@ -404,7 +433,7 @@
                           <p class="maq-txt">Bicicleta</p>
                           <p>BH Fitness 54</p>
                           <p>3,99 € / semana</p>
-                          <button type="button" class="btn btn-dark">Alquilar</button>
+                          <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#machinaryPopup">Alquilar</button>
                         </div>
                     </div>
                 </div>
@@ -416,7 +445,7 @@
                           <p class="maq-txt">Cinta de correr</p>
                           <p>BH Fitness 55</p>
                           <p>3,99 € / semana</p>
-                          <button type="button" class="btn btn-dark">Alquilar</button>
+                          <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#machinaryPopup">Alquilar</button>
                         </div>
                     </div>
                 </div>
@@ -428,7 +457,7 @@
                           <p class="maq-txt">Curl de biceps</p>
                           <p>BH Fitness 56</p>
                           <p>3,99 € / semana</p>
-                          <button type="button" class="btn btn-dark">Alquilar</button>
+                          <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#machinaryPopup">Alquilar</button>
                         </div>
                     </div>
                 </div>
