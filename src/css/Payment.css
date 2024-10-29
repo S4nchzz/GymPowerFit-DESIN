@@ -67,6 +67,12 @@ footer {
     color: rgb(209, 209, 209);
 }
 
+.horizontalMenuList, a {
+    color: white;
+    text-decoration: none;
+    padding-left: 1%;
+}
+
 .image-container {
     position: relative;
     display: flex;

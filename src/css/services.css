@@ -180,3 +180,9 @@ footer {
     font-weight: bold;
     width: 25%;
 }
+
+.horizontalMenuList, a {
+    color: white;
+    text-decoration: none;
+    padding-left: 1%;
+}
