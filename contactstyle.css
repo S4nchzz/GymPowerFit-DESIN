@@ -67,3 +67,43 @@
 .contact-form button:hover {
     background-color: #555;
 }
+.modal-body {
+    display: flex;
+    align-items: center;
+}
+
+.loginDiv {
+    text-align: center;
+    margin-left: 10%;
+}
+
+.manBackground {
+    flex: 1;
+    display: flex;
+    justify-content: right;
+}
+
+.loginTextFields {
+    display: block;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    color: white;
+}
+
+.manPosingPicture {
+    mask-image: linear-gradient(
+        to left,
+        black 10%,
+        transparent
+    );
+
+    opacity: 70%;
+    margin-bottom: -3%;
+    background-size: cover;
+}
+
+.buttonsPopup {
+    display: flex;
+    justify-content: space-between;
+}

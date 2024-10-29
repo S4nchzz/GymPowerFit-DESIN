@@ -7,37 +7,84 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <title>Contáctanos</title>
     <link rel="stylesheet" href="contactstyle.css">
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-        <img src="./src/logo.png" width="100px" class="logo">
-        <div class="collapse navbar-collapse justify-content-end">
-            <ul class="navbar-nav me-4">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-link whiteText" role="button" href="#">Home</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle whiteText" role="button" href="#" data-bs-toggle="dropdown">Servicios</a>
+        <div class="container-fluid">
+            <img class="logoPicture" src="./src/logo.png" width="100px" class="logo">
 
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="cursos.js" role="button">Cursos</a></li>
-                        <li><a class="dropdown-item" href="maquinas.js" role="button">Maquinas</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-link whiteText" role="button" href="cuotas.js">Cuotas</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-link whiteText" role="button" href="reservas.js">Reservas</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-link whiteText" role="button" href="contacto.js">Contacto</a>
-                </li>
-            </ul>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="sidebarMenu">
+                <ul class="navbar-nav me-4">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-link whiteText" role="button" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle whiteText" role="button" href="#" data-bs-toggle="dropdown">Servicios</a>
+
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="cursos.js" role="button">Cursos</a></li>
+                            <li><a class="dropdown-item" href="maquinas.js" role="button">Máquinas</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-link whiteText" role="button" href="cuotas.js">Cuotas</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-link whiteText" role="button" href="reservas.js">Reservas</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-link whiteText" role="button" href="contacto.js">Contacto</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#"><span class="material-icons" style="color:white; font-size: 200%;">person</span></a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
-    
+
+    <div class="modal fade" id="loginPopup" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                    <div class="modal-body bg-dark">
+                        <div class="loginDiv">
+                            <div class="loginOrOtherText"></div>
+                            <h1 class="text-white" style="font-size: 350%;">Log in</h1>
+                            <h5 style="color: #8A8888; font-size: 0.80rem;">or sing up with</h5>
+                            
+                            <div class="loginSocialNetworkPictures">
+                                <a href="#"><img src="./src/img/socialNetworks/facebook.png" alt="facebook"></a>
+                                <a href="#"><img src="./src/img/socialNetworks/google.png" alt="google"></a>
+                                <a href="#"><img src="./src/img/socialNetworks/twitter.png" alt="twitter"></a>
+                            </div>
+
+                            <div class="inputFields mt-3">
+                                <input type="text" id="username" class="loginTextFields" placeholder="Username"/>
+                                <label for="username">Username</label>
+                                <input type="password" id="password" class="loginTextFields" placeholder="Password"/>
+                                <label for="password">Password</label>
+                            </div>
+
+                            <div class="buttonsPopup">
+                                <button type="button" class="btn btn-secondary"style="background-color: transparent;">Sing up</button>
+                                <button type="button" class="btn btn-primary">Log in</button>
+                            </div>
+                        </div>
+
+                        <div class="manBackground">
+                            <img class="manPosingPicture" src="./src/img/man.png" alt="Man Possing" width="90%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div>
         <img src="./src/Background.jpg" alt="Maquinas" width="100%" >    
     </div>
